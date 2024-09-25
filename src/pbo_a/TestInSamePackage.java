@@ -9,9 +9,9 @@ public class TestInSamePackage {
         System.out.println("Circle Public radius: " + circle.radiusPublic); // Accessible
 
         // Accessing private member (not allowed)
-        //System.out.println("Circle Private radius: " + circle.radiusPrivate); // Not accessible (will cause an error)
+        // System.out.println("Circle Private radius: " + circle.radiusPrivate); // Not accessible (will cause an error)
 
-        // Accessing p          rotected member (allowed within the same package)
+        // Accessing protected member (allowed within the same package)
         System.out.println("Circle Protected radius: " + circle.radiusProtected); // Accessible
 
         // Accessing default (package-private) member (allowed within the same package)
@@ -24,7 +24,7 @@ public class TestInSamePackage {
         System.out.println("Triangle Public base: " + triangle.basePublic); // Accessible
 
         // Accessing private member (not allowed)
-        //System.out.println("Triangle Private base: " + triangle.basePrivate); // Not accessible (will cause an error)
+        // System.out.println("Triangle Private base: " + triangle.basePrivate); // Not accessible (will cause an error)
 
         // Accessing protected member (allowed within the same package)
         System.out.println("Triangle Protected base: " + triangle.baseProtected); // Accessible
