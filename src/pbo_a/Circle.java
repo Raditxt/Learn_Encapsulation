@@ -3,7 +3,7 @@ package pbo_a;
 public class Circle {
     // Members with different access levels
     public double radiusPublic;
-    private double radiusPrivate;
+    private final double radiusPrivate;
     protected double radiusProtected;
     double radiusDefault; // default access (package-private)
 
@@ -30,9 +30,26 @@ public class Circle {
         System.out.println("Default radius: " + radiusDefault);
     }
 
+    // Method to calculate the area of the circle
+    public double calculateArea() {
+        return Math.PI * radiusPublic * radiusPublic;
+    }
+
+    // Method to calculate the circumference of the circle
+    public double calculateCircumference() {
+        return 2 * Math.PI * radiusPublic;
+    }
+
     // Main method to demonstrate access
     public static void main(String[] args) {
         Circle circle = new Circle(5.0);
         circle.accessMembersInSameClass();
+
+        // Calculating area and circumference
+        double area = circle.calculateArea();
+        double circumference = circle.calculateCircumference();
+
+        System.out.println("Area of the circle: " + area);
+        System.out.println("Circumference of the circle: " + circumference);
     }
 }

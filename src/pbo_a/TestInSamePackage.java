@@ -11,7 +11,7 @@ public class TestInSamePackage {
         // Accessing private member (not allowed)
         //System.out.println("Circle Private radius: " + circle.radiusPrivate); // Not accessible (will cause an error)
 
-        // Accessing protected member (allowed within the same package)
+        // Accessing p          rotected member (allowed within the same package)
         System.out.println("Circle Protected radius: " + circle.radiusProtected); // Accessible
 
         // Accessing default (package-private) member (allowed within the same package)

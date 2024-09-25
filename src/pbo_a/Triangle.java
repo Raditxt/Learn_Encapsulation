@@ -3,7 +3,7 @@ package pbo_a;
 public class Triangle {
     // Members with different access levels
     public double basePublic;
-    private double basePrivate;
+    private final double basePrivate;
     protected double baseProtected;
     double baseDefault; // default access (package-private)
 
