@@ -6,7 +6,7 @@ public class Circle {
     // Constructor
     public Circle(double radius) {
         this.radius = radius;
-    }g
+    }
 
     // Method to calculate the area of the circle
     public double getArea() {
